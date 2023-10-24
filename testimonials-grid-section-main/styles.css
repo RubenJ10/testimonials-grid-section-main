@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: hsl(210, 46%, 95%);
+  font-family: Hanken Grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.countainer {
+  padding: 2rem;
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 16px;
+}
+
+section {
+  padding: 2rem;
+  text-align: left;
+  border-radius: 16px;
+}
+
+img {
+  width: 30px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.first-section {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 12rem 0.5rem;
+  background-size: 98px auto;
+}
+
+.second-section {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.third-section,
+.five-section {
+  background-color: white;
+}
+
+.fourth-section {
+  background-color: hsl(219, 29%, 14%);
+}
+
+h2 {
+  font-size: small;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: small;
+}
+
+p {
+  font-size: large;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.white {
+  color: hsl(0, 2%, 88%);
+}
+
+.grey {
+  color: hsl(240, 2%, 24%);
+}
+
+h5 {
+  opacity: 0.5;
+}
+
+blockquote {
+  font-size: small;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+
+  .countainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .first-section {
+    grid-area: 1 / 1 / 3 / 5;
+  }
+  .second-section {
+    grid-area: 1 / 5 / 3 / 7;
+  }
+  .third-section {
+    grid-area: 3 / 1 / 5 / 3;
+  }
+  .fourth-section {
+    grid-area: 3 / 3 / 5 / 7;
+  }
+  .five-section {
+    grid-area: 1 / 7 / 5 / 9;
+  }
+}
